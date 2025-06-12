@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
-
+app.listen(5000, () => console.log('Server running on port 5000'));
 //Use project routes
 app.use('/api/projects', projectRoutes);
 app.use(express.json());
